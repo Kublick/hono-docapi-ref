@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Tutotial DocApi",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
