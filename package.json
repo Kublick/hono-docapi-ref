@@ -5,14 +5,21 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "lint": "eslint .",
-    "fix": "eslint . --fix"
+    "fix": "eslint . --fix",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@asteasolutions/zod-to-openapi": "^7.2.0",
     "@hono/node-server": "^1.13.2",
     "@hono/zod-openapi": "^0.16.4",
+    "@libsql/client": "^0.14.0",
     "@scalar/hono-api-reference": "^0.5.153",
     "dotenv": "^16.4.5",
     "dotenv-expand": "^11.0.6",
+    "drizzle-orm": "^0.34.1",
+    "drizzle-zod": "^0.5.1",
     "hono": "^4.6.4",
     "hono-pino": "^0.3.0",
     "pino": "^9.4.0",
@@ -23,8 +30,9 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
     "@types/node": "^20.11.17",
+    "drizzle-kit": "^0.25.0",
     "eslint": "^9.12.0",
     "eslint-plugin-format": "^0.1.2",
-    "tsx": "^4.7.1"
+    "tsx": "^4.19.1"
   }
 }
